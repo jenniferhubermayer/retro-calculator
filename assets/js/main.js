@@ -1,8 +1,5 @@
 let buttons = Array.from(document.querySelectorAll('button'))
 let outPut = document.querySelector(".formOutput")
-outPut.innerText = [0];
-outPutFirstNum = outPut.innerText.slice(0,1)
-console.log(outPutFirstNum)
 
 buttons.map(button => {
     button.addEventListener('click', (event) => {  
