@@ -17,6 +17,15 @@ buttons.map(button => {
             case "AC":
                 outPut.innerText = "";
                 break;
+            case "+/-":
+                let num = outPut.innerText
+                if (num >= 0){
+                    outPut.innerText = -Math.abs(num);
+                }
+                else{
+                    outPut.innerText = Math.abs(num);
+                }
+                break;
             default:
                 outPut.innerText += event.target.value;
                 break;
