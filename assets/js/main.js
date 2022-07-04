@@ -19,11 +19,18 @@ buttons.map(button => {
                 break;
             case "+/-":
                 let num = outPut.innerText
-                if (num >= 0){
-                    outPut.innerText = -Math.abs(num);
-                }
-                else{
-                    outPut.innerText = Math.abs(num);
+                let numCheck = num.slice(1).includes("+") || num.slice(1).includes("-") || num.slice(1).includes("/") || num.slice(1).includes("*") || num.slice(1).includes("%") || num.slice(1).includes("(") || num.slice(1).includes(")");
+                console.log(num.slice(1))
+                console.log(numCheck)
+                console.log(num)
+                console.log(typeof num)
+                if (numCheck == false){
+                    if (num >= 0){
+                        outPut.innerText = -Math.abs(num);
+                    }
+                    else{
+                        outPut.innerText = Math.abs(num);
+                    }
                 }
                 break;
             default:
