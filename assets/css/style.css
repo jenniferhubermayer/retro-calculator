@@ -129,7 +129,7 @@ button:nth-of-type(7){
 
 form{
     display: grid;
-    grid-template-rows: repeat(1, 40px) repeat(8, 30px);
+    grid-template-rows: repeat(1, 40px) repeat(7, 30px);
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
 }
@@ -183,7 +183,6 @@ button:nth-of-type(21){
 
 div{
     grid-row: 2 / 3;
-    /* height: 40px */
 }
 
 button:nth-of-type(1),
