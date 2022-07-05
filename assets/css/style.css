@@ -8,8 +8,10 @@
 
 :root{
     --yellow: rgb(234, 218, 1);
+    --darkyellow: rgb(198, 185, 3);
     --lightgrey: rgb(185, 180, 180);
     --grey: rgb(117, 113, 113);
+    --darkgrey: rgb(94, 90, 90);
     --green: lightgreen;
     --white: white;
     --black: black;
@@ -102,6 +104,10 @@ button{
     box-shadow: 4px 4px 8px 1px rgba(89,89,89,0.91);
 }
 
+button:active{
+    background-color: var(--grey);
+}
+
 button:nth-of-type(4),
 button:nth-of-type(8),
 button:nth-of-type(12),
@@ -109,6 +115,14 @@ button:nth-of-type(16),
 button:nth-of-type(20){
     background-color: var(--yellow);
     color: var(--black);
+}
+
+button:nth-of-type(4):active,
+button:nth-of-type(8):active,
+button:nth-of-type(12):active,
+button:nth-of-type(16):active,
+button:nth-of-type(20):active{
+    background-color: var(--darkyellow);
 }
 
 button:nth-of-type(1),
@@ -123,6 +137,15 @@ button:nth-of-type(5),
 button:nth-of-type(6),
 button:nth-of-type(7){
     background-color: var(--grey);
+}
+
+button:nth-of-type(1):active,
+button:nth-of-type(2):active,
+button:nth-of-type(3):active,
+button:nth-of-type(5):active,
+button:nth-of-type(6):active,
+button:nth-of-type(7):active{
+    background-color: var(--darkgrey);
 }
 
 /* ===== FORM - GRID ===== */
